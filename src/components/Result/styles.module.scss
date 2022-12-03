@@ -1,1 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
+  .tableHeader {
+    display: flex;
+    gap: 9px;
+    span {
+      width: 100%;
+      font-weight: 600;
+    }
+  }
+
+  .tableItemContainer {
+    display: flex;
+    gap: 14px;
+    span {
+      width: 100%;
+    }
+  }
+}
