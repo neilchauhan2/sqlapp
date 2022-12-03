@@ -8,14 +8,18 @@ function Result() {
   const keys = Object.keys(customers);
   return (
     <div className={styles.container}>
-      <div className={styles.tableHeader}>
-        {Object.keys(customers[0]).map((item) => (
-          <span>{item}</span>
+      <table>
+        <tr>
+          {Object.keys(customers[0]).map((item) => (
+            <th>{item}</th>
+          ))}
+        </tr>
+        {customers.map((customer, index) => (
+          <tr>
+            <TableItem key={index} data={customer} keys={keys} />
+          </tr>
         ))}
-      </div>
-      {customers.map((customer, index) => (
-        <TableItem key={index} data={customer} keys={keys} />
-      ))}
+      </table>
     </div>
   );
 }

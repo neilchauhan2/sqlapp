@@ -1,7 +1,20 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  width: 97%;
+  height: 50vh;
+  overflow: scroll;
+  margin: 1rem;
+  table {
+    th,
+    td {
+      border: 1px solid #abb2b9;
+      padding: 1rem;
+    }
+    th {
+      text-align: left;
+    }
+    width: 100rem;
+    overflow: scroll;
+  }
 
   .tableHeader {
     display: flex;
@@ -12,11 +25,19 @@
     }
   }
 
-  .tableItemContainer {
-    display: flex;
-    gap: 14px;
-    span {
-      width: 100%;
+  .tableRows {
+    height: 60vh;
+    overflow: scroll;
+    .tableItemContainer {
+      margin: 1rem 0;
+      padding: 1rem 0;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      border-bottom: 1px solid #eee;
+      span {
+        width: 100%;
+      }
     }
   }
 }

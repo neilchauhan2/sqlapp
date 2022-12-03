@@ -4,11 +4,11 @@ const TableItem = ({data}) => {
   const keys = Object.keys(data);
   const values = keys.map((key) => data[key]);
   return (
-    <div className={styles.tableItemContainer}>
+    <React.Fragment className={styles.tableItemContainer}>
       {values.map((value) => (
-        <span>{value}</span>
+        <td>{value}</td>
       ))}
-    </div>
+    </React.Fragment>
   );
 };
 
