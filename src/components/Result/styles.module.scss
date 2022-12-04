@@ -10,14 +10,13 @@
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 
   table {
+    width: fit-content;
     th,
     td {
       border: 1px solid #abb2b9;
       padding: 1rem;
       text-align: center;
     }
-
-    max-width: max-content;
     overflow: scroll;
   }
 
