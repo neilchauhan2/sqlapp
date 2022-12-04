@@ -15,9 +15,13 @@ function Editor() {
         onChange={(evn) => setCode(evn.target.value)}
         padding={15}
         style={{
-          height: '35vh',
+          height: '53vh',
+          width: '50vw',
           fontSize: 16,
           backgroundColor: '#f5f5f5',
+          borderRadius: '4px',
+          boxShadow:
+            'rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px',
           fontFamily:
             'ui-monospace,SFMono-Regular,SF Mono,Consolas,Liberation Mono,Menlo,monospace',
         }}

@@ -14,31 +14,31 @@ const Home = () => {
     console.log(query);
     if (query === 'SELECT * FROM customers;') {
       setResult(customers);
-    }
-
-    if (query === 'SELECT country FROM customers;') {
+    } else if (query === 'SELECT country FROM customers;') {
       const res = customers.map((customer) => {
         return {
           country: customer.country,
         };
       });
       setResult(res);
-    }
-
-    if (query === 'SELECT * FROM customers WHERE country="Germany";') {
+    } else if (query === 'SELECT * FROM customers WHERE country="Germany";') {
       const res = customers.filter(
         (customer) => customer.country === 'Germany'
       );
       setResult(res);
-    }
-
-    if (query === 'SELECT COUNT (country) FROM customers;') {
+    } else if (query === 'SELECT COUNT (country) FROM customers;') {
       setResult([
         {
           Count: customers.length,
         },
       ]);
-    }
+    } else
+      setResult([
+        {
+          Message:
+            'Please enter a Valid Query, refer the Editor for Supported Queries or, Select a Sample Query from the Dropdown below.',
+        },
+      ]);
   };
 
   return (

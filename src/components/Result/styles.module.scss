@@ -1,8 +1,14 @@
 .container {
-  width: 97%;
+  width: 96%;
   height: 50vh;
   overflow: scroll;
   margin: 1rem;
+  // border: 5px solid #abb2b9;
+  border-radius: 4px;
+  padding: 0.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
   table {
     th,
     td {
