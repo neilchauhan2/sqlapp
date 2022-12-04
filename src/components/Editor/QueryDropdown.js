@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {useRecoilState} from 'recoil';
-import {codeState} from '../../atoms';
+import {codeState, dropdownSelectState} from '../../atoms';
 import styles from './styles.module.scss';
 
 const QueryDropdown = () => {
-  const [selectedValue, setSelectedValue] = useState('');
+  const [selectedValue, setSelectedValue] = useRecoilState(dropdownSelectState);
   const [toggle, setToggle] = useState(false);
   const [, setQuery] = useRecoilState(codeState);
 

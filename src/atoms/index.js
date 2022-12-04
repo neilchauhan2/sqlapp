@@ -9,3 +9,8 @@ export const resultState = atom({
   key: 'resultState',
   default: [],
 });
+
+export const dropdownSelectState = atom({
+  key: 'dropdownSelectState',
+  default: '',
+});

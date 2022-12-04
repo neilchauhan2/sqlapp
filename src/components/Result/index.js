@@ -25,6 +25,11 @@ const Result = () => {
           </tbody>
         </table>
       )}
+      {data.length === 0 && (
+        <div className={styles.placeholder}>
+          <span>Your Results will appear here.</span>
+        </div>
+      )}
     </div>
   );
 };
