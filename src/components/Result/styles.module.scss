@@ -8,36 +8,10 @@
     td {
       border: 1px solid #abb2b9;
       padding: 1rem;
+      text-align: center;
     }
-    th {
-      text-align: left;
-    }
-    width: 100rem;
-    overflow: scroll;
-  }
 
-  .tableHeader {
-    display: flex;
-    gap: 9px;
-    span {
-      width: 100%;
-      font-weight: 600;
-    }
-  }
-
-  .tableRows {
-    height: 60vh;
+    max-width: max-content;
     overflow: scroll;
-    .tableItemContainer {
-      margin: 1rem 0;
-      padding: 1rem 0;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      border-bottom: 1px solid #eee;
-      span {
-        width: 100%;
-      }
-    }
   }
 }

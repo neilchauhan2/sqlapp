@@ -10,7 +10,8 @@ function Editor() {
       <CodeEditor
         value={code}
         language="sql"
-        placeholder="Write SQL query below"
+        placeholder={`Write your SQL Queries here 👇 \nSupported Queries\n- SELECT * FROM customers;\n- SELECT Country FROM customers;\n- SELECT * FROM customers WHERE country="Germany"\n- SELECT COUNT (country) from customers;  
+        `}
         onChange={(evn) => setCode(evn.target.value)}
         padding={15}
         style={{
