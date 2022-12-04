@@ -1,4 +1,5 @@
 import React from 'react';
+import {v4 as uuidv4} from 'uuid';
 import {useRecoilValue} from 'recoil';
 import {resultState} from '../../atoms';
 import styles from './styles.module.scss';
@@ -14,12 +15,12 @@ const Result = () => {
           <tbody>
             <tr>
               {Object.keys(data[0]).map((item) => (
-                <th key={item}>{item}</th>
+                <th key={uuidv4()}>{item}</th>
               ))}
             </tr>
-            {data.map((customer, index) => (
-              <tr>
-                <TableItem key={customer[0]} data={customer} />
+            {data.map((customer) => (
+              <tr key={uuidv4()}>
+                <TableItem data={customer} />
               </tr>
             ))}
           </tbody>

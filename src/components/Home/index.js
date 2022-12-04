@@ -13,7 +13,6 @@ const Home = () => {
   const [, setDropdownSelectedVal] = useRecoilState(dropdownSelectState);
 
   const handleQuery = () => {
-    console.log(query);
     if (query === 'SELECT * FROM customers;') {
       setResult(customers);
     } else if (query === 'SELECT country FROM customers;') {

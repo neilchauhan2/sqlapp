@@ -1,4 +1,5 @@
 import React from 'react';
+import {v4 as uuidv4} from 'uuid';
 
 const TableItem = ({data}) => {
   const keys = Object.keys(data);
@@ -7,7 +8,7 @@ const TableItem = ({data}) => {
   return (
     <React.Fragment>
       {values.map((value) => (
-        <td>{value}</td>
+        <td key={uuidv4()}>{value}</td>
       ))}
     </React.Fragment>
   );
