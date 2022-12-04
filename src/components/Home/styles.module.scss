@@ -4,14 +4,19 @@
   .editorSection {
     margin: 1rem;
 
-    button {
-      margin-top: 1rem;
-      background: #2ecc71;
-      border: none;
-      color: #fff;
-      padding: 0.5rem 2rem;
-      border-radius: 4px;
-      font-weight: 600;
+    .buttons {
+      display: flex;
+      gap: 10px;
+      button {
+        margin-top: 1rem;
+        background: #2ecc71;
+        border: none;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        border-radius: 4px;
+        font-weight: 600;
+        height: 100%;
+      }
     }
   }
 }

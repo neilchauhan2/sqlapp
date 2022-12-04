@@ -3,6 +3,7 @@ import {useRecoilState, useRecoilValue} from 'recoil';
 import {codeState, resultState} from '../../atoms';
 import customers from '../../data/customers.json';
 import Editor from '../Editor';
+import QueryDropdown from '../Editor/QueryDropdown';
 import Result from '../Result';
 import styles from './styles.module.scss';
 
@@ -45,7 +46,10 @@ const Home = () => {
     <div className={styles.container}>
       <div className={styles.editorSection}>
         <Editor />
-        <button onClick={handleQuery}>Run Query</button>
+        <div className={styles.buttons}>
+          <button onClick={handleQuery}>Run Query</button>
+          <QueryDropdown />
+        </div>
       </div>
       <Result />
     </div>
